@@ -57,7 +57,7 @@ QCOM_BOARD_PLATFORMS += xiaomi_sm6375
 # Kernel
 VENDOR_CMDLINE := "androidboot.hardware=qcom \
                    androidboot.memcg=1 \
-		   androidboot.selinux=permissive \
+		           androidboot.selinux=permissive \
                    androidboot.usbcontroller=4e00000.dwc3 \
                    cgroup.memory=nokmem,nosocket \
                    loop.max_part=7 \
@@ -169,11 +169,15 @@ TW_HAS_EDL_MODE := false
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
-TW_FRAMERATE := 60
+TW_FRAMERATE := 120
+TW_ROUND_SCREEN := true
+TW_CUSTOM_CLOCK_POS := 60
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone20/temp"
-TW_BATTERY_SYSFS_WAIT_SECONDS := 5
+# TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone28/temp"
+TW_NO_CPU_TEMP := true
+TW_BATTERY_SYSFS_WAIT_SECONDS := 3
 TW_BACKUP_EXCLUSIONS := /data/fonts
+TW_INCLUDE_FASTBOOTD := true
 
 # TWRP Debug Flags
 TWRP_INCLUDE_LOGCAT := true
