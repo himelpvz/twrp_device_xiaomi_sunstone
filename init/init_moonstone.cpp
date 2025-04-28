@@ -51,12 +51,12 @@ void model_property_override(const std::string& device, const std::string& model
 }
 
 void vendor_load_properties() {
-    const std::string hwc = GetProperty("ro.boot.hwc", "");
-    if (hwc == "CN") {
-        model_property_override("sunstone", "Redmi Note 12R Pro");
-    } else if (hwc == "GL")  {
-        model_property_override("moonstone", "POCO X5");
-    } else {
+    const std::string hwc = GetProperty("ro.boot.product.hardware.sku", "");
+    if (hwc == "sunstone_global") {
         model_property_override("sunstone", "Redmi Note 12 5G");
+    } else if (hwc == "moonstone_p_global" || "moonstone_p_in")  {
+        model_property_override("moonstone", "POCO X5 5G");
+    } else {
+        model_property_override("sunstone", "Redmi Note 12R Pro 5G");
     }
 }
