@@ -23,10 +23,10 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 PRODUCT_RELEASE_NAME := moonstone
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := moonstone
-PRODUCT_NAME := twrp_moonstone
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X5 5G
+PRODUCT_DEVICE := sunstone
+PRODUCT_NAME := twrp_sunstone
+PRODUCT_BRAND := Redmin
+PRODUCT_MODEL := Redmi Note 12 5G
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Assert
