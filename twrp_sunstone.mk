@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/moonstone
+DEVICE_PATH := device/xiaomi/sunstone
 
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := moonstone
+PRODUCT_RELEASE_NAME := sunstone
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sunstone
