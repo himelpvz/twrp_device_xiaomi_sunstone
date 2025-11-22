@@ -183,15 +183,13 @@ TW_INCLUDE_FASTBOOTD := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-#SHRP specific build flags
-
 SHRP_DEVICE_CODE := sunstone 
 SHRP_PATH := device/xiaomi/sunstone
 SHRP_MAINTAINER := Himel_pvz
 SHRP_REC_TYPE := Treble
 SHRP_DEVICE_TYPE := A/B
 SHRP_REC := /dev/block/bootdevice/by-name/boot
-SHRP_HAS_RECOVERY_PARTITION := false
+SHRP_HAS_RECOVERY_PARTITION := 
 SHRP_AB := true
 SHRP_EDL_MODE := 1
 
@@ -205,7 +203,7 @@ SHRP_FLASH := 1
 #SHRP Theming
 
 SHRP_NOTCH := true
-SHRP_DARK := true
+SHRP_DARK := 
 
 #Custom led paths for flashlight (Yes, idk which one actually works so i put all of them)
 
@@ -214,3 +212,5 @@ SHRP_FONP_1 := /sys/class/devices/virtual/camera/flashlight/rear_flash
 
 
 SHRP_FLASH_MAX_BRIGHTNESS := 1
+
+SHRP_NO_SAR_AUTOMOUNT := true
