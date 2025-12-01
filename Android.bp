@@ -15,3 +15,9 @@ cc_defaults {
     name: "VtsHalProfilerDefaults",
     visibility: ["//visibility:public"],
 }
+
+// Stub for CTS support defaults (for PackageManagerTestOverlayTarget)
+cc_defaults {
+    name: "cts_support_defaults",
+    visibility: ["//visibility:public"],
+}
