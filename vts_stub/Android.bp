@@ -1,0 +1,11 @@
+cc_defaults {
+    name: "vts_proto_fuzzer_default",
+}
+
+cc_defaults {
+    name: "VtsHalDriverDefaults",
+}
+
+cc_defaults {
+    name: "VtsHalProfilerDefaults",
+}

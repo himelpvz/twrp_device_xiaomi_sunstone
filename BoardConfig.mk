@@ -182,7 +182,8 @@ TW_INCLUDE_FASTBOOTD := true
 # TWRP Debug Flags
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
+TW_MAINTAINER := Himel_pvz
+TW_VERSION := Himel_pvz
 SHRP_DEVICE_CODE := sunstone 
 SHRP_PATH := device/xiaomi/sunstone
 SHRP_MAINTAINER := Himel_pvz
