@@ -1,3 +1,17 @@
 soong_namespace {
     imports: ["hardware/qcom-caf/bootctrl"],
 }
+cc_defaults {
+    name: "vts_proto_fuzzer_default",
+    visibility: ["//visibility:public"],
+}
+
+cc_defaults {
+    name: "VtsHalDriverDefaults",
+    visibility: ["//visibility:public"],
+}
+
+cc_defaults {
+    name: "VtsHalProfilerDefaults",
+    visibility: ["//visibility:public"],
+}
